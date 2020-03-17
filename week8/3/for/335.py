@@ -1,8 +1,8 @@
-import math as m
+import math
 
 a = int(input())
 b = int(input())
 
 for i in range(a, b):
-    if m.modf(m.sqrt(i))[0] == 0:
+    if math.modf(math.sqrt(i))[0] == 0:
         print(i)

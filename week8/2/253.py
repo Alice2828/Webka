@@ -1,4 +1,4 @@
-def isLeap(year: int):
+def Vis(year: int):
     if year % 400 == 0:
         return True
     if year % 100 == 0:
@@ -9,4 +9,4 @@ def isLeap(year: int):
 
 
 year = int(input())
-print('YES' if isLeap(year) else 'NO')
+print('YES' if Vis(year) else 'NO')
