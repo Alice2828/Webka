@@ -1,5 +1,5 @@
-import math as m
+import math 
 
 a = float(input())
 b = float(input())
-print(m.sqrt(a ** 2 + b ** 2))
+print(math.sqrt(a ** 2 + b ** 2))
