@@ -6,20 +6,13 @@ def sign(x: int):
     return 0
 
 n = int(input())
-arr = []
-for i in range (0, n):
-    x = sign(int(input()))
-    arr.append(x)
-    if(i == 0 or i == n-1):
-        arr.append(x)
-
-#print(arr)
-
-for i in range (1, n + 1):
-    a, b, c = arr[i-1:i+2]
-    #print(a, b, c)
-    if(a == b == c):
-        print('YES')
-        exit()
-
-print('NO')
+a=list(map(int,input().split()))
+ans = 0
+for f in range(0, n-1):
+    if (a[f] > 0 and a[f+1] > 0) or (a[f] < 0 and a[f+1] < 0):
+        ans = 1
+        break
+if ans == 1:
+    print('YES')
+elif ans == 0:
+    print('NO')

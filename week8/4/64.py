@@ -1,7 +1,5 @@
 n = int(input())
-arr = []
+arr=list(map(int,input().split()))
 for i in range (0, n):
-    x = int(input())
-    arr.append(x)
-    if(x % 2 == 0):
-        print(x)
+    if(arr[i] % 2 == 0):
+        print(arr[i], end=" ")
