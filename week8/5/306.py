@@ -3,10 +3,11 @@ def min(a: int, b: int, c: int, d: int):
     min2 = c if c < d else d
     return min1 if min1 < min2 else min2
 
-a = int(input())
-b = int(input())
-c = int(input())
-d = int(input())
+arr=list(map(int,input().split()))
+a = arr[0]
+b = arr[1]
+c = arr[2]
+d = arr[3]
 
 print(min(a, b, c, d))
 
