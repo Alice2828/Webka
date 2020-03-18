@@ -1,7 +1,9 @@
-def xor(a: bool, b: bool):
-    return (a and not b) or (not a and b)
+def xor(x, y):
+    return x != y
 
-print(xor(True, True))
-print(xor(False, False))
-print(xor(True, False))
-print(xor(False, True))
+
+a = [int(i) for i in input().split()]
+if xor(a[0], a[1]):
+    print(1)
+else:
+    print(0)
