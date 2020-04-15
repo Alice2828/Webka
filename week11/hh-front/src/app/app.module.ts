@@ -8,12 +8,14 @@ import { NewsPageComponent } from './news-page/news-page.component';
 import { NewsListComponent } from './news-list/news-list.component';
 import { AuthInterceptor } from "../auth.interceptor";
 import { FormsModule } from "@angular/forms";
+import { VacanciesPageComponent } from './vacancies-page/vacancies-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewsPageComponent,
-    NewsListComponent
+    NewsListComponent,
+    VacanciesPageComponent
   ],
   imports: [
     BrowserModule,
