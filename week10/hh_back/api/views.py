@@ -67,7 +67,7 @@ def vacancy_detail(request, vacancy_id):
 @csrf_exempt
 def vacancy_top(request):
     try:
-        vacancies = Vacancy.objects.order_by("-salary")
+        vacancies = Vacancy.objects.order_by("-salary")[10:0]
         vacancies_json = [p.to_json() for p in vacancies]
     except Company.DoesNotExist as e:
         return JsonResponse({'error': str(e)})
