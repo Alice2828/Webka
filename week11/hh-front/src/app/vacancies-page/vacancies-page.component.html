@@ -1,1 +1,8 @@
-<p>vacancies-page works!</p>
+<div *ngIf="vacancy">
+    <p>Id: {{ vacancy.id }}</p>
+    <p>Name: {{ vacancy.name}}</p>
+    <p>Description:{{vacancy.description}}</p>
+    <p>Salary:{{vacancy.salary}}</p>
+      <a [routerLink]="'/'">Back</a>
+   
+ 
